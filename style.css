@@ -1,0 +1,102 @@
+/* リセットCSS */
+html, p, h1{
+  margin: 0;
+  padding: 0;
+}
+/* --------- */
+
+
+/* 全体と「a」タグのcss */
+body, a{
+  text-align: center;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Today's Caffeinの文字のことろ */
+.header{
+  background-color: chocolate;
+  padding: 0.5rem;
+  color: white;
+}
+
+/* コップの左・中・右を横並びにするためのcss */
+.cap-up{
+  padding-top: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* コップの縁の色 */
+.left, .right, .bottom{
+  background-color:darkred;
+}
+
+
+/* コップの右と左 */
+.left, .right{
+  height: 20rem;
+  width: 1.5rem;
+}
+
+/* コップの中 */
+.center{
+  background-color: wheat;
+  width: 15rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+/* コップの底 */
+.bottom{
+  margin: auto;
+  width: 18rem;
+  height: 1rem;
+}
+
+/* 普通のコーヒーボタン */
+.add-cafe{
+  width: 15rem;
+  height: 5rem;
+  color: white;
+  border: none;
+  background-color:darkred;
+}
+
+
+/* カフェインレスボタン */
+.add-cafe2{
+  width: 15rem;
+  height: 1rem;
+  color: white;
+  border: none;
+  background-color:darkred;
+}
+
+/* 致死量の文字 */
+.death{
+  color: white;
+  position: fixed;/* 画面の一枚上に上がるような感じにして、コップの底に固定 */
+  bottom: 18rem;
+  left: 47%;
+}
+
+/* 飲んだコーヒーボタン */
+.menu{
+  display: flex;
+  width: 100%;
+  position: fixed;  /* 画面の一枚上に上がるような感じにして、画面下に固定 */
+  bottom: 0rem;
+} 
+
+/* ボタンの装飾 */
+.menu button{
+   color: white;
+   background-color: chocolate;
+   width: calc(100vw/2);
+   border: solid 1px white;
+   font-size: 1rem;
+   padding: 0.2rem 0 2rem 0;
+ }
